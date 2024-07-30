@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+  <link rel="stylesheet" href="Portfolio.css">
+  <link rel="stylesheet" href="common.css">
+
+</head>
+
+<body>
+  <header>
+    <section class="header-section1">
+      <div class="header-nav1">
+        <div class="portfolio-btn">Portfolio</div>
+        <div class="skill-btn">Skill</div>
+        <div class="project-btn">Project</div>
+        <div class="aboutMe-btn">About Me</div>
+      </div>
+    </section>
+    <section class="header-section2">
+      <div class="header-nav2">
+        <div class="portfolio-btn">Portfolio</div>
+        <div class="skill-btn">Skill</div>
+        <div class="project-btn">Project</div>
+        <div class="aboutMe-btn">About Me</div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <div class="about-me-section">
+      <section class="about-me-section1">
+        <div class="img-section"></div>
+        <div class="introduce-section">
+          <span>생년월일 : 1997.05.26</span>
+          <span>Email : 67klgg@naver.com</span>
+          <span>Github : github.com/97Kcm</span>
+          <span>주소지 : 경산시 부적리</span>
+        </div>
+      </section>
+      <section class="about-me-section2">
+        <div id="introduction">
+          <span>Introduction</span>
+          <span>
+            안녕하세요 <br>
+            신입 백엔드 개발자 '김창민' 입니다
+          </span>
+        </div>
+        <div id="introduction-main">
+          <span>
+            자기소개 글~~~~~~~~~~~~~~~~~~
+          </span>
+        </div>
+      </section>
+    </div>
+
+    <div class="project">
+      <section class="project-section1">
+        <div>
+          <span>Project</span>
+        </div>
+        <div>
+          <img src="icons/ebooksite.png"/>
+        </div>
+      </section>
+      <section class="project-explain">
+        <div>
+          <h1>1. ebook-project(Team-Project)</h1>
+        </div>
+        <div>
+          <ul>
+            프로젝트에 대해
+            <li>
+              평소 책을 즐겨보는 사람들이 책을 사지 않고도 <br>
+              웹으로 간편하게 볼 수 있게 해주는 ebook site를 구현
+            </li>
+            프로젝트 내 주요 역할
+            <li>
+              사용자 데이터를 받고 출력해주는 기능 전담
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="skill">
+      <div>
+        <span>자격증</span>
+        <div></div>
+      </div>
+    </div>
+    <div class="skill2">
+      <div>
+        <span>Skill</span>
+      </div>
+      <div id="skill-section">
+        <span>FrontEnd</span>
+        <section>
+          <img src="icons/html.png"/>
+          <img src="icons/css.png"/>
+        </section>
+        <span>BackEnd</span>
+        <section>
+          <img src="icons/js.png"/>
+          <img src="icons/java.png"/>
+          <img src="icons/mysql.png"/>
+          <img src="icons/springboot.png"/>
+        </section>
+        <span>Tools</span>
+        <section>
+          <img src="icons/intelj.jpg"/>
+          <img src="icons/github.jpg"/>
+          <img src="icons/eclipse.jpg"/>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-section">
+      <div class="footer-annotation">
+        <span>Copyright © 김창민</span>
+        <span>24.05.20</span>
+      </div>
+      <div class="footer-img-section">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+<script>
+  const header = document.querySelector('.header-section2');
+  const skillBtn = document.querySelectorAll('.skill-btn');
+  const projBtn = document.querySelectorAll('.project-btn');
+  const aboutMeBtn = document.querySelectorAll('.aboutMe-btn');
+
+
+  window.onscroll = () => {
+    if(window.scrollY > 80) {
+      header.toggleAttribute('active', true);
+    }else {
+      header.toggleAttribute('active', false);
+    }
+  }
+
+  for(let i = 0; i < 2; i++){
+    aboutMeBtn[i].onclick = () => {
+      window.scrollTo(0, 90);
+    }
+  }
+
+  for(let i = 0; i < 2; i++){
+    projBtn[i].onclick = () => {
+      window.scrollTo(0, 970);
+    }
+  }
+
+  for(let i = 0; i < 2; i++){
+    skillBtn[i].onclick = () => {
+      window.scrollTo(0, 2500);
+    }
+  }
+
+</script>
