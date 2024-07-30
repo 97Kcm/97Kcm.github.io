@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'SOGANGUNIVERSITYTTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SOGANGUNIVERSITYTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'SOGANGUNIVERSITYTTF';
+
+    --Xsmall-font-size : 10px;
+    --small-font-size : 13px;
+    --medium-font-size : 16px;
+    --large-font-size : 21px;
+    --Xlarge-font-size : 24px;
+
+}
+
 header > section{
     display: flex;
     align-items: center;
