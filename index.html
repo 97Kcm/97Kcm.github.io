@@ -4,94 +4,81 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
   <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/3d4b55021f.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-  <header>
-    <section class="header-section1">
-      <div class="header-nav1">
-        <div class="portfolio-btn">Portfolio</div>
-        <div class="skill-btn">Skill</div>
-        <div class="project-btn">Project</div>
-        <div class="aboutMe-btn">About Me</div>
+<!--  <header>-->
+<!--    <section class="header-section1">-->
+<!--      <div class="header-nav1">-->
+<!--        <div class="portfolio-btn">Portfolio</div>-->
+<!--        <div class="project-btn">Project</div>-->
+<!--        <div class="skill-btn">Skill</div>-->
+<!--        <div class="aboutMe-btn">About Me</div>-->
+<!--      </div>-->
+<!--    </section>-->
+<!--    <section class="header-section2">-->
+<!--      <div class="header-nav2">-->
+<!--        <div class="portfolio-btn">Portfolio</div>-->
+<!--        <div class="project-btn">Project</div>-->
+<!--        <div class="skill-btn">Skill</div>-->
+<!--        <div class="aboutMe-btn">About Me</div>-->
+<!--      </div>-->
+<!--    </section>-->
+<!--  </header>-->
+  <nav>
+    <section>
+      <div>
+        <span id="introduce-btn">INTRODUCE</span>
+        <span id="skill-btn">SKILLS</span>
+        <span id="education-btn">EDUCATION</span>
+        <span id="project-btn">PROJECT</span>
+        <span id="contact-btn">CONTACT</span>
       </div>
     </section>
-    <section class="header-section2">
-      <div class="header-nav2">
-        <div class="portfolio-btn">Portfolio</div>
-        <div class="skill-btn">Skill</div>
-        <div class="project-btn">Project</div>
-        <div class="aboutMe-btn">About Me</div>
-      </div>
-    </section>
-  </header>
+  </nav>
   <main>
     <div class="about-me-section">
-      <section class="about-me-section1">
-        <div class="img-section"></div>
-        <div class="introduce-section">
-          <span>생년월일 : 1997.05.26</span>
-          <span>Email : 67klgg@naver.com</span>
-          <span>Github : github.com/97Kcm</span>
-          <span>주소지 : 경산시 부적리</span>
+      <section id="profile-section">
+        <div>
+          <img src="icons/이력서용사진1.jpg"/>
         </div>
       </section>
-      <section class="about-me-section2">
-        <div id="introduction">
-          <span>Introduction</span>
-          <span>
-            안녕하세요 <br>
-            신입 백엔드 개발자 '김창민' 입니다
-          </span>
+      <section id="profile-introduce">
+        <div>
+          <h1>CHANG MIN KIM</h1>
         </div>
-        <div id="introduction-main">
-          <span>
-            자기소개 글~~~~~~~~~~~~~~~~~~
-          </span>
+        <div>
+          <span>TEL.</span>
+          <span style="color: rgba(108,117,125,0.7)"> 010-5513-7829</span>
+          <span>  |  </span>
+          <span>EMAIL.</span>
+          <span style="color: rgba(108,117,125,0.7)"> 67klgg@naver.com</span>
+          <span>  |  </span>
+          <span>ADDRESS.</span>
+          <span style="color: rgba(108,117,125,0.7)"> Bujeok-ri, Gyeongsan-si</span>
+        </div>
+        <div>
+          <p>
+            맡은 일에 책임을 가지고 임하며 끊임없는 노력으로 계속해서 성장하는 개발자입니다.
+          </p>
+        </div>
+      </section>
+      <section id="profile-icon">
+        <div>
+          <a href="https://github.com/97Kcm">
+            <img src="icons/github.jpg"/>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/gompangmin___/">
+            <img src="icons/instagram.png"/>
+          </a>
         </div>
       </section>
     </div>
 
-    <div class="project">
-      <section class="project-section1">
-        <div>
-          <span>Project</span>
-        </div>
-        <div>
-          <img src="icons/ebooksite.png"/>
-        </div>
-      </section>
-      <section class="project-explain">
-        <div>
-          <h1>1. ebook-project(Team-Project)</h1>
-        </div>
-        <div>
-          <ul>
-            프로젝트에 대해
-            <li>
-              평소 책을 즐겨보는 사람들이 책을 사지 않고도 <br>
-              웹으로 간편하게 볼 수 있게 해주는 ebook site를 구현
-            </li>
-            프로젝트 내 주요 역할
-            <li>
-              사용자 데이터를 받고 출력해주는 기능 전담
-            </li>
-            <li>
-              데이터베이스 안의 책 정보를 가져와 메인페이지 출력 및 해당 책 페이지로의 이동 구현
-            </li>
-          </ul>
-        </div>
-      </section>
-
-    </div>
-
-    <div class="skill">
-      <div>
-        <span>자격증</span>
-        <div></div>
-      </div>
-    </div>
     <div class="skill2">
       <div>
         <span>Skill</span>
@@ -108,6 +95,7 @@
           <img src="icons/java.png"/>
           <img src="icons/mysql.png"/>
           <img src="icons/springboot.png"/>
+          <img src="icons/mybatis.jpeg"/>
         </section>
         <span>Tools</span>
         <section>
@@ -117,53 +105,212 @@
         </section>
       </div>
     </div>
-  </main>
-  <footer>
-    <div class="footer-section">
-      <div class="footer-annotation">
-        <span>Copyright © 김창민</span>
-        <span>24.05.20</span>
-      </div>
-      <div class="footer-img-section">
-        <div></div>
-        <div></div>
-      </div>
+
+    <div class="education">
+      <section>
+        <div>
+          <span>Education</span>
+        </div>
+      </section>
+      <section>
+        <div>
+          <span  style="color: rgba(14, 124, 207, 0.7); font-size: 23px; font-weight: bold">2023.06 ~ 2024.03</span>
+          <span class="education-name">KOREA IT Academy</span>
+          <span style="color: #999999; margin-bottom: 15px;">[JAVA, MYSQL, Linux, Python 등 기초 언어 학습]</span>
+        </div>
+        <div>
+          <span class="stack">기술 스택</span>
+          <span class="stack-list">JAVA, MYSQL, LINUX, Python</span>
+        </div>
+        <div>
+          <span class="study">주요 학습 내용</span>
+          <p class="study-list">
+            - Python의 기초 및 코드 작성법을 학습<br>
+            - JAVA의 기초 및 코드 작성법을 학습<br>
+            - MYSQL의 기초 및 코드 작성법을 학습<br>
+            - LINUX의 기초 및 코드 작성법, 기본 구조를 학습<br>
+          </p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <span style="color: rgba(14, 124, 207, 0.7); font-size: 23px; font-weight: bold">2024.03 ~ 2024.07</span>
+          <span class="education-name">KOREA IT Academy</span>
+          <span style="color: #999999; margin-bottom: 15px;">[자바 백엔드 웹 개발]</span>
+        </div>
+        <div>
+          <span class="stack">기술 스택</span>
+          <span class="stack-list">HTML/CSS, Javascript, Java, MySQL, Spring/Spring Boot, AWS ec2/DB</span>
+        </div>
+        <div>
+          <span class="study">주요 학습 내용</span>
+          <p class="study-list">
+            - 당근과 같은 중고 거래 사이트 제작<br>
+            - oAuth2.0을 통해 통합 로그인 및 회원가입 기능<br>
+            - SpringBoot 프레임워크와 Mybtis를 이용해 게시판 작성 및 출력 기능<br>
+          </p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <span  style="color: rgba(14, 124, 207, 0.7); font-size: 23px; font-weight: bold">2024.05 ~ 2024.07</span>
+          <span class="education-name">KOREA IT Academy</span>
+          <span style="color: #999999; margin-bottom: 15px;">[자바 백엔드 개발자 양성과정]</span>
+        </div>
+        <div>
+          <span class="stack">기술 스택</span>
+          <span class="stack-list">HTML/CSS, Javascript, Java, MySQL, Spring/Spring Boot, AWS ec2/DB</span>
+        </div>
+        <div>
+          <span class="study">주요 학습 내용</span>
+          <p class="study-list">
+            - e북 웹소설/웹툰 구매 사이트 제작<br>
+            - oAuth2.0을 통해 통합 로그인 및 회원가입 기능<br>
+            - 외부 API 연동을 통한 캐시 충전 기능<br>
+            - SpringBoot 프레임워크와 Mybatis를 이용해 데이터 입출력 기능<br>
+          </p>
+        </div>
+      </section>
     </div>
-  </footer>
+
+    <div class="project">
+      <span>Project</span>
+      <div>
+        <section class="project-section1">
+          <div>
+            <img src="icons/ebooksite.png"/>
+          </div>
+        </section>
+        <section class="project-explain">
+          <div>
+            <h1>1. ebook-project(Team-Project)</h1>
+          </div>
+          <div class="during-project">
+            <span>2024.07.15~2024.07.26</span>
+          </div>
+          <div>
+            <div>
+              <span class="project-stack">기술 스택 : </span>
+              <span class="project-stack-explain">HTML/CSS, Javascript, Java, MySQL, Spring/Spring Boot, AWS ec2/DB</span>
+            </div>
+            <div>
+              <span class="project-main-function">주요 기능 : </span>
+              <p class="project-main-function-list">
+                - oAuth를 통한 개인 회원가입, 로그인/로그아웃, 아이디 찾기, 비밀번호 재설정<br>
+                - 메인 페이지 및 해당 작품마다 상세 페이지 구현<br>
+                - 작품마다 좋아요를 통한 선호 작품 지정 및 해제 가능.<br>
+                - 작품 검색란을 통해 원하는 키워드의 작품 검색 가능.<br>
+                - 마이페이지 구매 책들 목록, 좋아요 설정한 리스트들을 보여주는 서비스 구현.<br>
+                - 책 뷰어 페이지를 통해 구매한 책들을 직접 볼 수 있게 설정.<br>
+                - 포트원 결제 api를 통한 다방면 결제 기능 구현.<br>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div>
+        <section class="project-section1">
+          <div>
+            <img src="icons/copy-danguen.png"/>
+          </div>
+        </section>
+        <section class="project-explain">
+          <div>
+            <h1>2. copy-danguen-page</h1>
+          </div>
+          <div class="during-project">
+            <span>2024.07.15~2024.07.26</span>
+          </div>
+          <div>
+            <div>
+              <span class="project-stack">기술 스택 : </span>
+              <span class="project-stack-explain">HTML/CSS, Javascript, Java, MySQL, Spring/Spring Boot, AWS ec2/DB</span>
+            </div>
+            <div>
+              <span class="project-main-function">주요 기능 : </span>
+              <p class="project-main-function-list">
+                - oAuth를 통한 개인 회원가입, 로그인/로그아웃, 아이디 찾기, 비밀번호 재설정<br>
+                - mailSender를 통해 회원가입 시 인증기능 구현<br>
+                - 메인 페이지 사용자들이 등록해놓은 거래 물품 확인 및 해당 판매 페이지로 이동 구현<br>
+                - 원하는 제품을 키워드를 통해 검색 가능<br>
+                - STOMP를 통한 다른 사용자와의 채팅 기능 구현<br>
+                - 판매를 원하는 제품 설명 및 제품 사진을 등록하여 게시글 작성 기능 구현<br>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+    </div>
+
+    <div class="contact">
+      <section class="img-section">
+        <img src="icons/산.png"/>
+        <div>
+          <span>CONTACT ME</span>
+          <span>회사와 함께 성장하는 개발자가 되겠습니다. 연락주세요.</span>
+        </div>
+      </section>
+      <section>
+        <div class="contact-box-section">
+          <div>
+            <div><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="contact-name">Contact Number</span>
+              <span>010-5513-7829</span>
+            </div>
+          </div>
+          <div>
+            <div><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span class="contact-name">Email Address</span>
+              <span>67klgg@naver.com</span>
+            </div>
+          </div>
+          <div>
+            <div><i class="fa-brands fa-github"></i></div>
+            <div>
+              <span class="contact-name">Github</span>
+              <span>github.com/97Kcm</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
 
 </body>
 </html>
 <script>
-  const header = document.querySelector('.header-section2');
-  const skillBtn = document.querySelectorAll('.skill-btn');
-  const projBtn = document.querySelectorAll('.project-btn');
-  const aboutMeBtn = document.querySelectorAll('.aboutMe-btn');
+  const introduceBtn = document.getElementById('introduce-btn');
+  const skillBtn = document.getElementById('skill-btn');
+  const educationBtn = document.getElementById('education-btn');
+  const projectBtn = document.getElementById('project-btn');
+  const contactBtn = document.getElementById('contact-btn');
 
 
-  window.onscroll = () => {
-    if(window.scrollY > 80) {
-      header.toggleAttribute('active', true);
-    }else {
-      header.toggleAttribute('active', false);
-    }
+  introduceBtn.onclick = () => {
+    window.scrollTo(0,0);
   }
 
-  for(let i = 0; i < 2; i++){
-    aboutMeBtn[i].onclick = () => {
-      window.scrollTo(0, 90);
-    }
+  skillBtn.onclick = () => {
+    window.scrollTo(0,900);
   }
 
-  for(let i = 0; i < 2; i++){
-    projBtn[i].onclick = () => {
-      window.scrollTo(0, 970);
-    }
+  educationBtn.onclick = () => {
+    window.scrollTo(0,2000);
   }
 
-  for(let i = 0; i < 2; i++){
-    skillBtn[i].onclick = () => {
-      window.scrollTo(0, 2500);
-    }
+  projectBtn.onclick = () => {
+    window.scrollTo(0,3740);
   }
+
+  contactBtn.onclick = () => {
+    window.scrollTo(0,6140);
+  }
+
+
 
 </script>
